@@ -37,7 +37,8 @@ const ButtonStyle = styled(ButtonBase)`
   text-decoration: none;
   border: 0;
   border-radius: ${rem("3px")};
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 ${rem("4px")} ${rem("6px")} rgba(50, 50, 93, 0.11),
+    0 ${rem("1px")} ${rem("3px")} rgba(0, 0, 0, 0.08);
   user-select: none;
   white-space: nowrap;
   -webkit-user-drag: none;
@@ -47,7 +48,8 @@ const ButtonStyle = styled(ButtonBase)`
 
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 ${rem("7px")} ${rem("14px")} rgba(50, 50, 93, 0.1),
+      0 ${rem("3px")} ${rem("6px")} rgba(0, 0, 0, 0.08);
   }
 
   ${switchProp("theme", {
