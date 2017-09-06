@@ -3,14 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "normalize": "^0.3.1",
     "polished": "^1.7.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.13",
     "styled-components": "^2.1.2",
-    "styled-normalize": "^2.2.1",
     "styled-tools": "^0.1.5"
   },
   "scripts": {

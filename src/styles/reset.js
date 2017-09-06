@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 import { colors, fonts } from "styles/var";
+import { rem } from "polished";
 
 export default css`
   /**
@@ -8,8 +9,6 @@ export default css`
   html {
     box-sizing: border-box;
     height: 100%;
-    font-size: 62.5%;
-    font-size: calc(1em * 0.625);
   }
 
   *,
@@ -201,6 +200,6 @@ export default css`
   hr {
     border: 0;
     border-top: 1px solid ${colors.divider};
-    margin: 2rem 0;
+    margin: ${rem("20px")} 0;
   }
 `;

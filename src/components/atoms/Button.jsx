@@ -1,20 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
+import { rem } from "polished";
 import { ifProp, switchProp } from "styled-tools";
 
 import { colors } from "styles/var";
 
 const buttonStyleMap = {
   L: {
-    height: "4rem",
-    fontSize: "1.6rem",
-    padding: "0 1.5rem",
+    height: rem("40px"),
+    fontSize: rem("16px"),
+    padding: `0 ${rem("15px")}`,
   },
   M: {
-    height: "3rem",
-    fontSize: "1.2rem",
-    padding: "0 1.5rem",
+    height: rem("30px"),
+    fontSize: rem("12px"),
+    padding: `0 ${rem("15px")}`,
   },
 };
 
@@ -35,7 +36,7 @@ const ButtonStyle = styled(ButtonBase)`
   font-size: ${props => buttonStyleMap[props.size].fontSize};
   text-decoration: none;
   border: 0;
-  border-radius: 0.3rem;
+  border-radius: ${rem("3px")};
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   user-select: none;
   white-space: nowrap;
