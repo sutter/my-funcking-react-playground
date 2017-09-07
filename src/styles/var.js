@@ -1,4 +1,4 @@
-import { lighten } from "polished";
+import { lighten, rem } from "polished";
 
 const neutral = "#6b7c93";
 const primary = "#7795f8";
@@ -23,14 +23,14 @@ export const fonts = {
   primary:
     '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
 
-  XS: "1rem",
-  S: "1.2rem",
-  M: "1.4rem",
-  L: "1.6rem",
-  XL: "1.8rem",
-  XXL: "2.2rem",
-  XXXL: "2.8rem",
-  XXXXL: "3.6rem",
+  XS: rem("10px"),
+  S: rem("12px"),
+  M: rem("14px"),
+  L: rem("16px"),
+  XL: rem("18px"),
+  XXL: rem("22px"),
+  XXXL: rem("28px"),
+  XXXXL: rem("36px"),
 
   regular: 400,
   bold: 700,
