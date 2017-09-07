@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AppHeader from "components/organisms/AppHeader";
+import AppHeader from "../organisms/AppHeader";
 
 class App extends Component {
   render() {
