@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "../atoms/Button";
+import { grid } from "../../styles/var.js";
 
-const Header = styled.header`padding: 2rem;`;
+const Header = styled.header`padding: ${grid.gutter.L};`;
 
 const AppHeader = () => {
   return (
     <Header>
-      <Button theme="primary">Primary</Button>
-      <Button size="M">Neutral</Button>
+      <a href="https://sutterlity.fr/">Sutterlity</a>
     </Header>
   );
 };

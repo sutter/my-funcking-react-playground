@@ -35,3 +35,11 @@ export const fonts = {
   regular: 400,
   bold: 700,
 };
+
+export const grid = {
+  gutter: {
+    M: rem("10px"),
+    L: rem("20px"),
+    XL: rem("40px"),
+  },
+};
