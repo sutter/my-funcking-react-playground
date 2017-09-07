@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 import { rem } from "polished";
 import { ifProp, switchProp } from "styled-tools";
 
-import { colors } from "../../styles/var";
+import { colors, fonts } from "../../styles/var";
 
 const buttonStyleMap = {
   L: {
@@ -19,11 +19,12 @@ const buttonStyleMap = {
   },
 };
 
-const ButtonBase = ({ type, theme, ...props }) =>
+const ButtonBase = ({ type, theme, fullWidth, size, ...props }) =>
   React.createElement(type, props);
 
 const ButtonStyle = styled(ButtonBase)`
-  display: inline-block;
+  display: ${ifProp("fullWidth", "block", "inline-block")};
+  width: ${ifProp("fullWidth", "100%", "auto")};
   margin: 0;
   padding: ${props => buttonStyleMap[props.size].padding};
   height: ${props => buttonStyleMap[props.size].height};
@@ -32,8 +33,10 @@ const ButtonStyle = styled(ButtonBase)`
   cursor: pointer;
   opacity: ${ifProp("disabled", 0.5, 1)};
   pointer-events: ${ifProp("disabled", "none", "auto")};
+  font-family: ${fonts.primary};
   font-size: ${props => buttonStyleMap[props.size].fontSize};
   text-decoration: none;
+  text-align: center;
   border: 0;
   border-radius: ${rem("3px")};
   box-shadow: 0 ${rem("4px")} ${rem("6px")} rgba(50, 50, 93, 0.11),
@@ -71,10 +74,16 @@ const ButtonStyle = styled(ButtonBase)`
 export const Button = props => <ButtonStyle {...props} />;
 
 Button.PropTypes = {
+  theme: PropTypes.oneOf(["neutral", "primary"]).isRequired,
   type: PropTypes.oneOf(["a", "button"]).isRequired,
+  size: PropTypes.oneOf(["L", "M"]).isRequired,
+  fullWidth: PropTypes.bool.isRequired,
+  disabled: PropTypes.bool.isRequired,
 };
 Button.defaultProps = {
   theme: "neutral",
   type: "button",
   size: "L",
+  fullWidth: false,
+  disabled: false,
 };
