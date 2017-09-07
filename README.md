@@ -27,3 +27,4 @@ yarn storybook
 * [Styled Tools](https://github.com/diegohaz/styled-tools)
 * [Polished](https://polished.js.org)
 * [Storybook](https://storybook.js.org/)
+* [React Snapshot](https://github.com/geelen/react-snapshot)
