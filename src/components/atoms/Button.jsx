@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 import { rem } from "polished";
 import { ifProp, switchProp } from "styled-tools";
 
-import { colors } from "styles/var";
+import { colors } from "../../styles/var";
 
 const buttonStyleMap = {
   L: {
@@ -32,7 +32,6 @@ const ButtonStyle = styled(ButtonBase)`
   cursor: pointer;
   opacity: ${ifProp("disabled", 0.5, 1)};
   pointer-events: ${ifProp("disabled", "none", "auto")};
-  font-family: inherit;
   font-size: ${props => buttonStyleMap[props.size].fontSize};
   text-decoration: none;
   border: 0;

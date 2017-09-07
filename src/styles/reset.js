@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { colors, fonts } from "styles/var";
+import { colors, fonts } from "./var";
 import { rem } from "polished";
 
 export default css`

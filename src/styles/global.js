@@ -1,6 +1,6 @@
 import { injectGlobal } from "styled-components";
 import { normalize } from "polished";
-import css from "styles/reset";
+import css from "./reset";
 
 injectGlobal`
   ${normalize()},

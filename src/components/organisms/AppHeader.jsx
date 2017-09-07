@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "components/atoms/Button";
+import { Button } from "../atoms/Button";
 
 const Header = styled.header`padding: 2rem;`;
 
