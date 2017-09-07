@@ -2,13 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { switchProp } from "styled-tools";
+import { grid } from "../../styles/var.js";
 
 const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: ${switchProp("size", {
-    M: "600px",
-    L: "960px",
+    M: grid.size.M,
+    L: grid.size.L,
   })};
 `;
 

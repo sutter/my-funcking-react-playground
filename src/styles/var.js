@@ -42,4 +42,8 @@ export const grid = {
     L: rem("20px"),
     XL: rem("40px"),
   },
+  size: {
+    M: rem("600px"),
+    L: rem("960px"),
+  },
 };
